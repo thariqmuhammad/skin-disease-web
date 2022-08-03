@@ -1,0 +1,100 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7" style="margin-top: 30px;">
+            <h2>Pengertian Kudis</h2>
+            <p align="justify">
+                Kudis, atau scabies, adalah infeksi kulit yang disebabkan oleh tungau Sarcoptes scabiei. 
+                Tungau tersebut bereproduksi pada permukaan kulit, lalu masuk ke dalam kulit untuk bertelur, 
+                sehingga menyebabkan rasa gatal. Timbulnya rasa gatal dan keinginan menggaruk dapat 
+                lebih parah di malam hari.
+            </p>
+
+            <div>
+                <h2>Gejala Kudis</h2>
+                <p align="justify">
+                    Gejala kudis paling umum yang dapat timbul saat gangguan ini terjadi adalah:
+                    <li>Rasa gatal yang parah, terutama di malam hari.</li>
+                    <li>Alami ruam menyerupai jerawat.</li>
+                    <li>Terdapat sisik atau lecet pada kulit.</li>
+                    <li>Alami luka akibat garukan.</li>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5" style="padding: 50px;">
+            <div class="bg-secondary" style="border-radius: 50px; width: 300px;height: 300px; position:relative;">
+                <img src="{{data}}" alt="" width="300" height="300" style="border-radius: 50px;">
+            <div style="position: absolute; bottom:-30px; left:65px;">
+                <b>Terdeteksi {{percentage}}% {{hasil}}</b>
+            </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <div>
+            <h3>Penyebab Kudis</h3>
+            <p align="justify">
+                Penyebab scabies adalah tungau jenis S. scabiei yang menginvasi kulit. Tungau ini 
+                biasanya terdapat di seprai, gorden, bantal, atau pakaian orang yang terinfeksi. 
+                Saat bersembunyi di bawah kulit, tungau membuat terowongan sebagai tempat ia menyimpan telur.
+            </p>
+            <p align="justify">
+                Saat telur menetas, larva tersebut dapat muncul ke permukaan kulit dan menyebar ke area kulit 
+                lainnya, bahkan pindah ke orang lain. Gatal yang timbul karena penyakit ini merupakan reaksi 
+                tubuh terhadap tungau, telur, serta kotorannya.
+            </p>
+            <p align="justify">
+                Kontak fisik dekat dengan seseorang yang mengidap penyakit ini, seperti berbagi pakaian atau 
+                tidur satu ranjang dapat meningkatkan risiko terinfeksi kudis. Rutin membersihkan tempat 
+                tidur dan tidak berbagi-pakai pakaian sangat penting untuk mencegah penularan.
+            </p>
+        </div>
+        
+        <div>
+            <h3>Pengobatan Kudis</h3>
+            <p align="justify">
+                Kudis dapat diobati dengan menggunakan beberapa jenis obat. Beberapa krim dan losion bisa 
+                didapatkan melalui resep dokter. Obat kudis biasanya dioleskan di sekujur tubuh, dari 
+                leher ke bawah, lalu dibiarkan selama setidaknya 8 jam.
+            </p>
+            <p align="justify">
+                Dokter juga akan menganjurkan semua anggota keluarga dan orang terdekat pengidap untuk 
+                mengonsumsi obat tersebut meskipun tidak menunjukkan tanda-tanda tertular scabies. 
+                Hal ini bertujuan untuk mencegah penyebaran scabies. Obat krim digunakan untuk 
+                mengatasi penyakit ini dengan membunuh tungau dan telurnya.
+            </p>
+            <p align="justify">
+                Namun, ada baiknya untuk berdiskusi dengan dokter terlebih dahulu terkait tindakan 
+                pengobatan ini. Sebab sebagian obatnya tidak boleh digunakan oleh anak-anak atau 
+                wanita hamil. Walaupun obat tersebut membunuh tungau dengan cepat, tapi rasa gatal 
+                mungkin tidak sepenuhnya hilang selama beberapa minggu.
+            </p>
+        </div>
+
+        <div>
+            <h3>Pencegahan Kudis</h3>
+            <p align="justify">
+               Ada beberapa cara yang bisa dilakukan untuk mencegah infestasi ulang dan mencegah penyebaran penyakit ini pada orang lain, yaitu:
+            </p>
+            <li>Membersihkan pakaian dengan benar.</li>
+            <li>Pisahkan barang yang tidak bisa dicuci.</li>
+            <li>Jaga kebersihan dengan baik, termasuk tempat tidur.</li>
+            <li>Hindari kontak dengan orang yang terinfeksi. </li>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>Kapan harus ke dokter?</h3>
+            <p align="justify">
+                Jika kamu mengalami gejala terkait penyakit kudis, ada baiknya segera melakukan pemeriksaan. Penanganan segera dapat mencegah penyebaran penyakit ini pada orang-orang terdekat.
+            </p>
+        </div>
+
+<p>Source: Halodoc.com</p>
+
+    </div>
+</div>
+
+{% endblock %}

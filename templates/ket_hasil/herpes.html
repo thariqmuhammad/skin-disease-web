@@ -1,0 +1,85 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7" style="margin-top: 30px;">
+            <h2>Pengertian Herpes</h2>
+            <p align="justify">
+                Herpes adalah penyakit yang ditandai dengan munculnya lepuhan berwarna 
+                kemerahan dan berisi cairan pada kulit. Penyakit ini termasuk dalam penyakit 
+                jangka panjang, karena virusnya bisa bertahan seumur hidup di dalam tubuh seseorang.
+            </p>
+
+            <div>
+                <h2>Gejala Herpes</h2>
+                <p align="justify">
+                    Gejala biasanya muncul dalam waktu 3-7 hari setelah seseorang terpapar virus. 
+                    Gejalanya sendiri diklasifikasikan berdasarkan tingkat keparahan yang dialami 
+                    oleh pengidap. Gejala awal yang dijumpai berupa bintil berwarna putih tampak berisi air 
+                    atau disebut sebagai vesikel. Bintik ini muncul berkelompok di atas kulit yang sembab dan 
+                    kemerahan (eritematosa). Awalnya vesikel tersebut tampak putih, tetapi lama-kelamaan 
+                    berisi nanah (pus) berwarna hijau. 
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5" style="padding: 50px;">
+            <div class="bg-secondary" style="border-radius: 50px; width: 300px;height: 300px; position:relative;">
+                <img src="{{data}}" alt="" width="300" height="300" style="border-radius: 50px;">
+            <div style="position: absolute; bottom:-30px; left:65px;">
+                <b>Terdeteksi {{percentage}}% {{hasil}}</b>
+            </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <div>
+            <h3>Penyebab Herpes</h3>
+            <p align="justify">
+                Penyebab herpes  adalah virus herpes simpleks tipe I dan II. Kedua virus tersebut 
+                tergolong ke dalam virus DNA. Virus ini mudah ditularkan dari satu orang ke orang 
+                lain melalui kontak kulit, seperti berciuman atau bersentuhan. Sedangkan pada 
+                tipe II, melakukan kontak seksual adalah penyebab utama penularan virus.
+            </p>
+        </div>
+        
+        <div>
+            <h3>Pengobatan Herpes</h3>
+                <p align="justify">untuk mengurangi nyeri yang ditimbulkan oleh virus, berikut ini beberapa langkah yang dapat dilakukan:</p>
+                <ul align="justify">
+                    <li>Mengonsumsi obat pereda nyeri.</li>
+                    <li>Mandi dengan menggunakan air suam.</li>
+                    <li>Kompres dengan air hangat atau atau air dingin pada kulit yang terkena.</li>
+                    <li>Menggunakan pakaian dalam berbahan katun.</li>
+                    <li>Menggunakan pakaian longgar.</li>
+                    <li>Menjaga area koreng tetap kering dan bersih.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div>
+            <h3>Pencegahan Herpes</h3>
+            <p align="justify">
+                Satu-satunya cara untuk sepenuhnya menghindari infeksi virus adalah tidak melakukan hubungan seksual dengan pengidapnya. Jika aktif secara seksual, kamu dapat melakukan hal-hal berikut untuk menurunkan kemungkinan terinfeksi virus:
+            </p>
+            <ul>
+                <li>Bertahan dalam satu hubungan jangka panjang.</li>
+                <li>Menggunakan kondom.</li>
+                <li>Jangan berhubungan intim dengan orang yang memiliki luka kelamin.</li>
+                <li>Terbuka terhadap pasangan.</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>Kapan harus ke dokter?</h3>
+            <p align="justify">
+                Segera tanyakan pada dokter saat mengalami berbagai gejala yang telah disebutkan di atas. Diskusikan juga jika pernah mengalami cacar air, karena kamu berisiko mengalami kekambuhan akibat virus aktif kembali.
+        </div>
+
+<p>Source: Halodoc.com</p>
+
+    </div>
+</div>
+
+{% endblock %}

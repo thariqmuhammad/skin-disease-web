@@ -1,0 +1,111 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7" style="margin-top: 30px;">
+            <h2>Pengertian Eksim</h2>
+            <p align="justify">
+                Eksim adalah gangguan pembengkakan pada kulit yang dapat ditandai dengan 
+                timbulnya warna kemerahan, ruam, dan rasa gatal. Ekim bukan penyakit 
+                yang menular dan sejauh ini penyebabnya belum diketahui. Kemungkinan 
+                besar terjadi akibat adanya faktor genetik dan lingkungan
+            </p>
+
+            <div>
+                <h2>Gejala Eksim</h2>
+                <p>
+                    Gejala eksim paling umum yang dapat timbul saat gangguan ini terjadi adalah:
+                    <li>Kulit yang menjadi kering dan bersisik.</li>
+                    <li>Kulit yang memerah.</li>
+                    <li>Terasa gatal.</li>
+                    <li>Luka yang terbuka atau berkerak.</li>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5" style="padding: 50px;">
+            <div class="bg-secondary" style="border-radius: 50px; width: 300px;height: 300px; position:relative;">
+                <img src="{{data}}" alt="" width="300" height="300" style="border-radius: 50px;">
+            <div style="position: absolute; bottom:-30px; left:65px;">
+                <b>Terdeteksi {{percentage}}% {{hasil}}</b>
+            </div> 
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <div>
+            <h3>Penyebab Eksim</h3>
+            <p align="justify">
+                Eksim dapat disebabkan oleh faktor dari luar (eksogen), seperti 
+                bahan kimia, mikroorganisme (bakteri, jamur).
+            </p>
+        </div>
+        
+        <div>
+            <h3>Pengobatan Eksim</h3>
+                <p>Beberapa cara pengobatan yang bisa seperti dilakukan</p>
+                <b>Pengobatan rumahan :</b>
+            <p>
+                <li>Mandi dengan air hangat.</li>
+                <li>Mengoleskan pelembap setelah mandi.</li>
+                <li>Menggunakan pelembap setiap hari.</li>
+                <li>Memakai katun dan kain lembut.</li>
+            </p>
+        </div>
+
+        <div>
+            <b>Pengobatan medis :</b>
+            <p>
+                <ul align="justify">
+                    <li>
+                    Penggunaan antihistamin. Metode ini dapat meredakan eksim yang diinduksikan oleh alergi. Namun, perlu diperhatikan jika obat ini dapat menyebabkan kantuk jika dikonsumsi secara oral. Dokter kerap menyarankan untuk menggunakan obat secara topikal.
+                    </li>
+                    <li>
+                    Penggunaan kortikosteroid oles. Obat ini dapat digunakan untuk menekan peradangan akibat eksim. Namun, pengobatan seperti steroid sebaiknya hanya digunakan di daerah yang mengalami peradangan dan tidak untuk area lain, terutama area luka dan wajah.
+                    </li>
+                    <li>
+                    Penggunaan pelembap kulit. Pilih pelembap yang benar-benar sesuai dengan kondisi kulit. Cobalah lebih sering mengoleskannya untuk menghindari masalah kulit yang lebih meluas.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div>
+            <h3>Pencegahan Eksim</h3>
+            <p align="justify">
+                Pencegahan pada eksim umumnya dilakukan dengan melakukan perawatan kulit yang benar. Pastikan untuk menghindari kulit yang terlalu kering atau terlalu basah. Jaga kelembapan kulit serta hindari keringat yang berlebih. Pastikan juga hindari kontak dengan berbagai pemicu dari gangguan ini. Beberapa cara mencegahnya adalah:
+            </p>
+            <ul align="justify">
+                <li>Hindari menggunakan bahan yang menimbulkan rasa gatal, seperti wol.</li>
+                <li>Jangan gunakan sabun dan deterjen dengan kandungan yang keras.</li>
+                <li>Pastikan untuk menggunakan pelembap udara di kamar tidur.</li>
+                <li>Kurangi pikiran yang menyebabkan stres.</li>
+                <li>Sebaiknya hindari untuk mengonsumsi makanan pemicu alergi dan pemicu iritasi.</li>
+                <li>Cegah perubahan suhu dan kelembaban kulit yang ekstrim.</li>
+                <li>Hindari mandi menggunakan air yang terlalu panas.</li>
+                <li>Jangan memanaskan dan mendinginkan kulit secara berlebih.</li>
+                <li>Gunakan pelindung ketika bersentuhan dengan deterjen atau bahan kimia lainnya.</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>Kapan harus ke dokter?</h3>
+            <palign="justify">
+                Ada beberapa kondisi yang dapat menjadi tanda seseorang terserang eksim dan perlu segera menghubungi dokter, seperti:
+            </p>
+            <ul align="justify">
+                <li>Terlihat tanda-tanda mengalami infeksi, seperti demam, kemerahan, kehangatan, nanah, atau lecet.</li>
+                <li>Eksim pada kulit tiba-tiba berubah atau memburuk.</li>
+                <li>Perawatan yang dilakukan tidak kunjung berhasil.</li>
+                <li>Kehilangan waktu tidur atau aktivitas harian yang terganggu.</li>
+                <li>Kulit terasa sakit.</li>
+            </ul>
+        </div>
+
+<p>Source: Halodoc.com</p>
+
+    </div>
+</div>
+
+{% endblock %}

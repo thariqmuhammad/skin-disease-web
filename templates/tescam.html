@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <video id="preview"></video>
+        <button id="capture">Capture</button>
+        <canvas id="output" style="display: none;"></canvas>
+        <img id="result">
+        
+
+        <script>
+            navigator.mediaDevices.getUserMedia({
+                audio: false,
+                video: {
+                    width: 400,
+                    height: 400
+                }
+            })
+            .then(stream => {
+                preview.srcObject = stream;
+                preview.play();
+            })
+            .catch(error => {
+                console.error(error)
+            })
+            // jika tombol capture di click
+            capture.addEventListener('click', () => {
+                const context = output.getContext('2d');
+
+                output.width = 400,
+                output.height = 400
+
+                context.drawImage(preview, 0, 0, output.width, output.height);
+                result.src = output.toDataURL();
+                const url = output.toDataURL();
+                console.log(url);
+            })
+        </script>
+    </body>
+</html>

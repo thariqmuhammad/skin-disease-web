@@ -1,0 +1,119 @@
+{% extends "main_layout.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <section id="home" class="jumbotron" style="padding: 20px; background-color: white;">
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="d-judul">
+                        <span class="t-yellow" style="font-size: 70px; line-height: 100px; font-size: 96px;">
+                            Derma Machine
+                        </span>
+                        <p style="line-height: 37px; margin: 20px 0px; font-size: 32px"><b>Deteksi penyakit kulit anda menggunakan Derma Machine.</b></p>
+                        <p style="line-height: 28px; font-size: 24px;">
+                            Membantu anda mendeteksi penyakit kulit sebagai diagnosis awal sebelum berkonsultasi ke dokter.
+                        </p>
+                        <a href="predic" class="btn btn-warning text-light" style="margin-top: 20px;">
+                            <b>Coba Sekarang</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="static/gambar/wajah.svg" alt="">
+                </div>
+           </div>
+        </section>
+        <!-- section jenis penyakit -->
+        <section class="bg-ligh" id="penyakit">
+            <div class="jumbotron">
+                <div style="text-align: center; font-size: 25px; line-height:43px">
+                    <b>Jenis Penyakit yang Bisa Kami Deteksi</b>
+                </div>
+                <div>
+                    <style>
+                        html{
+                            scrollbar-width: normal;
+                            scrollbar-color: red green;
+                        }
+                        .sh::-webkit-scrollbar {
+                            height: 5px;
+                            width: 20px;
+                        }
+                    
+                        .sh::-webkit-scrollbar:hover {
+                           background-color: gold;
+                        }
+                        .sh::-webkit-scrollbar-thumb {
+                           border-radius: 10px;
+                           max-width: 20px;
+                           background-color: silver;
+                        }
+                    </style>
+                    <div class="sh" style="display:flex; overflow-x: auto; ">
+                        <div class="bg-warning b1" style="min-width: 350px; display: inline; padding:80px; display: flex; align-items: center; justify-content: center; margin:20px; border-radius: 20px; text-align: center; box-shadow: 0 1px 2px 3px silver;">
+                            Eksim
+                        </div>
+                        <div class="bg-warning b2" style="min-width: 350px; display: inline; padding:80px; display: flex; align-items: center; justify-content: center; margin:20px; border-radius: 20px; text-align: center; box-shadow: 0 1px 2px 3px silver;">
+                            Herpes
+                        </div>
+                        <div class="bg-warning b3" style="min-width: 350px; display: inline; padding:80px; display: flex; align-items: center; justify-content: center; margin:20px; border-radius: 20px; text-align: center; box-shadow: 0 1px 2px 3px silver;">
+                            Jerawat
+                        </div>
+                        <div class="bg-warning b4" style="min-width: 350px; display: inline; padding:80px; display: flex; align-items: center; justify-content: center; margin:20px; border-radius: 20px; text-align: center; box-shadow: 0 1px 2px 3px silver;">
+                            Kudis
+                        </div>
+                        <div class="bg-warning b5" style="min-width: 350px; display: inline; padding:80px; display: flex; align-items: center; justify-content: center; margin:20px; border-radius: 20px; text-align: center; box-shadow: 0 1px 2px 3px silver;">
+                            Rosasea
+                        </div>
+                        <div style="min-width: 1px; display: inline; padding:1px; display: flex; align-items: center; justify-content: center; margin:1px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section about -->
+        <section style="margin-top: 50px;" id="tentang">
+            <div style="text-align: center; font-size: 2.5em"><b style="color: gold">Tentang Aplikasi Derma Machine</b></div>
+            <div class="row mt-10" style="margin-top: 50px;">
+                <div class="col-6" style="text-align: center;">
+                    <img src="../static/gambar/robot.svg" alt="">
+                </div>
+                <div class="col-6" style="display: flex; align-items:center; font-size:2em">
+                    <b>
+                    Derma Machine merupakan aplikasi Computer Vision untuk 
+                    mengidentifikasi penyakit kulit yang umum terjadi di Indonesia.
+                    Aplikasi ini memudahkan pengguna dalam diagnosa awal penyakit 
+                    sebelum ditangani lebih lanjut oleh ahli di bidangnya.
+                    </b>
+                </div>
+            </div>
+        </section>
+        <!-- Team kami -->
+        <section style="margin-top: 50px;" id="team">
+            <div style="font-size: 2em; text-align: center;"><b>Team Kami</b></div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3" style="text-align: center;">
+                    <div style="border-radius: 20px; width: 95%; height: 400px;">
+                        <img src="../static/gambar/team/jonatha.png" alt="" style="width: 95%; border-radius: 20px; height: 390px;">
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <div style="background-position: -200px -150px; border-radius: 20px; width: 95%; height: 400px;">
+                        <img src="../static/gambar/team/Thariq.jpg" alt="" style="width: 95%; border-radius: 20px; height: 390px;">
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <div style="border-radius: 20px; width: 95%; height: 400px;">
+                        <img src="../static/gambar/team/luthfi.jpg" alt="" style="width: 95%; border-radius: 20px; height: 390px;">
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <div style="border-radius: 20px; width: 95%; height: 400px;">
+                        <img src="../static/gambar/team/farhan.jpg" alt="" style="width: 95%; border-radius: 20px; height: 390px;">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+</div>
+
+{% endblock %}

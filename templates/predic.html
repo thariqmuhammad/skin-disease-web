@@ -1,0 +1,57 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+    <div class="row" style="margin-top: 50px; display: flex; align-items:center; font-size:2em">
+        <div class="col-md-6 text-align: center; padding: 50px;">
+            <p style="font-size: 1em; padding: 50px;">
+               <b style="color: gold;"> Unggah Gambar yang ingin anda deteksi!</b>
+            </p>
+            <br>
+            <p style="font-size: 0.7em; margin-top: -170px; padding: 50px;">
+                Pastikan gambar jelas dalam pencahayaan yang cukup
+            </p>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class=" btn btn-outline-warning" style="position: relative; padding-top: 10px;">
+                        <span style="position: absolute; top: -40px;right:28px">
+                            <img src="../static/gambar/arrow-bar-up.svg" width="40" alt="">
+                        </span>
+                    <!-- form open -->
+                    <form action="proses" method="POST" enctype="multipart/form-data">
+                        <input type="file" style="width: 75px;" name="file">
+                    </div>
+                </div>
+                <div class="col-4" style="position: relative; left:-100px">
+                    <div class=" btn btn-outline-warning" style="position: relative; padding-top: 10px;">
+                        <span style="position: absolute; top: -40px;right:28px">
+                            <img src="../static/gambar/record.svg" width="40" alt="" style="color: gold;">
+                        </span>
+                        <div class="btn btn-outline-warning record">Capture</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-5" id="tb_predic">
+                        <input id="dataGambar" type="hidden" value="kk" name="uriGambar">
+                        <button type="submit" class="btn btn-warning" id="predic" style="color:white" ">
+                            <b>Mulai Prediksi</b>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <canvas id="output" style="display: none;"></canvas>
+        </div>
+        <div class="col-md-6">
+            <div class="webcamku" style="text-align: center;">
+                <img src="../static/gambar/foto_prev.svg" alt="" id="preview_img" width="400">
+                <span style="position: relative; left: -250px">
+                    <img src="../static/gambar/record.svg" width="80" alt="">
+                </span>
+                <span style="position: relative; left: -350px;top:50px; font-size: 0.5em;">Image Preview</span>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

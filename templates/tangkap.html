@@ -1,0 +1,20 @@
+<div class="">
+    <img id="preview" width="400" height="400">
+    <input type="file">
+    <div class="imageUrl">
+        
+    </div>
+</div>
+
+
+<script src="../static/js/jquery-3.2.1.slim.min.js"></script>
+<script>
+    $('input[type=file').on('change', function(e){
+        var reader = new FileReader();
+        reader.onload = function(e){
+            $('#preview').attr('src', e.target.result)
+            console.log(e.target.result)
+        }
+        reader.readAsDataURL(this.files[0]);
+    })
+</script>

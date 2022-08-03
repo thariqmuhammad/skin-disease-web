@@ -1,0 +1,99 @@
+{% extends "main_layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7" style="font-size: 24px; margin-top: 30px;">
+            <h2>Kulit Normal</h2>
+            <p align="justify">
+                Kulit kamu saat ini sehat dan segar, tetapi jangan lengah dari perawatan dan penjagaan Kulit
+                agar tetap sehat selalu seperti dambaan banyak orang
+            </p>
+
+            <div>
+                <p align="justify">
+                    Perawatan kulit tentunya tidak hanya mencakup penggunaan produk-produk skin care, tapi juga perawatan dari dalam dengan pola hidup yang sehat.
+                    Lantas, apa saja hal yang perlu diperhatikan ketika ingin mendapat kecantikan kulit dari luar dan dalam?
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5" style="padding: 50px;">
+            <div class="bg-secondary" style="border-radius: 50px; width: 300px;height: 300px; position:relative;">
+                <img src="{{data}}" alt="" width="300" height="300" style="border-radius: 50px;">
+            <div style="position: absolute; bottom:-30px; left:65px;">
+                <b>Terdeteksi {{percentage}}% {{hasil}}</b>
+            </div> 
+            </div>
+        </div>
+    </div>
+    
+   <h3>Cara menjaga kesehatan kulit dari luar dan dalam</h3>
+    <b>1. Terapkan pola makan sehat</b>
+    <p>
+        <p align="justify"><span style="font-weight:400">
+            Makanan yang Anda konsumsi berpengaruh terhadap kesehatan kulit. Selain makanan bergizi 
+            seimbang, pastikan menu harian Anda berisikan makanan yang mengandung antioksidan serta 
+        </span>
+    </p>
+    <p>
+         Beberapa pilihan makanan yang baik untuk kulit antara lain:
+    </p>
+
+    <div>
+        <ul align="justify"> 
+            <li>
+                <span style="font-weight:400">
+                    buah dan sayuran berwarna kuning atau jingga seperti wortel dan tomat, 
+                </span>
+            </li> 
+                <span style="font-weight:400">
+                    sayuran berdaun hijau seperti bayam dan brokoli, 
+                </span>
+            </li> 
+                <span style="font-weight:400">
+                    susu rendah lemak,
+                </span>
+            </li> 
+                <span style="font-weight:400">
+                    buah beri,
+                </span>
+            </li> 
+                <span style="font-weight:400">
+                    kacang-kacangan dan lentil, serta
+                </span>
+            </li> 
+                <span style="font-weight:400">
+                    ikan berlemak seperti salmon dan ikan kembung. 
+                </span>
+            </li> 
+        </ul>
+    </div>
+
+    <h3><span style="font-weight:400">Tidak merokok</span></h3>
+    <p><span style="font-weight:400">
+        Salah satu cara merawat kulit ialah dengan menjauhi kebiasaan merokok. 
+    </span></p>
+    <p><span style="font-weight:400">
+        Merokok dapat mempersempit pembuluh darah kecil di lapisan terluar kulit. </span><span style="font-weight:400">
+        Akibatnya, aliran darah akan menurun dan membuat kulit tampak pucat, serta kusam.
+    </span></p>
+    <p><span style="font-weight:400">
+        Merokok juga merusak kolagen dan elastin pada jaringan kulit. Keduanya merupakan protein penting yang menjaga kulit tetap sehat dan lentur. 
+    </span></p>
+    <p>
+    <span style="font-weight:400">
+        Rusaknya kolagen dan elastin menyebabkan 
+    </span>
+    <span style="font-weight:400">
+        kerutan pada kulit
+    </span>
+    <span style="font-weight:400"> 
+        sehingga kulit tampak cepat tua.
+    </span>
+    </p>
+<br><br>
+    <p>Source : HelloSehat.com</p>
+
+</div>
+
+{% endblock %}
